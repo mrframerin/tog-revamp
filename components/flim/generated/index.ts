@@ -1,0 +1,12 @@
+export { default as HeadAssets } from "./HeadAssets";
+export { default as FlimLoader } from "./FlimLoader";
+export { default as FlimHeader } from "./FlimHeader";
+export { default as HeroSection } from "./HeroSection";
+export { default as BrandsSection } from "./BrandsSection";
+export { default as IntroPlatformSection } from "./IntroPlatformSection";
+export { default as AiTitleSection } from "./AiTitleSection";
+export { default as AiGenerateSection } from "./AiGenerateSection";
+export { default as CollaborationTitleSection } from "./CollaborationTitleSection";
+export { default as CollaborationSection } from "./CollaborationSection";
+export { default as FlimFooter } from "./FlimFooter";
+export { default as FlimCursor } from "./FlimCursor";

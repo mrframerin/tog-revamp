@@ -1,0 +1,6 @@
+import { createElement as h, Fragment } from "react";
+import home from "@/data/home.json";
+
+export default function CollaborationTitleSection() {
+  return h("section", { "data-lottie-stop-percent": "0.6", "data-title-section": "workflow", "data-wf--title-section--variant": "right", "className": "title-section" }, h("div", { "className": "title-section-decor w-variant-7531f794-65fa-c146-0f5d-d7f0e8d178d5 bg-pattern bg-brand-3" }, h("div", { "className": "title-section-circle" }, h("div", { "id": "lottie-workflow", "data-lottie-path": home.assets[105], "data-lottie-id": "workflow", "data-lottie-path-mobile": home.assets[106], "data-lottie-path-desktop-s": "", "data-lottie-stop-percent": "0.6", "className": "lottie" }, ))), h("div", { "className": "w-layout-blockcontainer container _w-full w-container" }, h("div", { "className": "w-layout-grid grid title-section-grid" }, h("div", { "id": "w-node-_57a6f3dc-2f65-b6a5-2eb6-cbb10f7fbc0c-fa9d2ef9", "className": "title-section-content w-variant-7531f794-65fa-c146-0f5d-d7f0e8d178d5" }, h("div", { "className": "text-ui-mono-s" }, home.text[61]), h("h2", { "className": "text-heading-h1" }, home.text[62]), h("p", { "className": "text-body-s" }, home.text[63], h("br", null, ))))));
+}
