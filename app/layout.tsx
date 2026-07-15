@@ -5,9 +5,9 @@ import "./globals.css";
 import { HeadAssets } from "@/components/flim/generated";
 
 export const metadata: Metadata = {
-  title: "Flim | The search engine for creative people",
+  title: "Tog | Creative Branding and Web Design Agency",
   description:
-    "Movie & Video Database - Flim is the leading image research website, delivering handpicked HD stills and Video Cuts. AI search engine helps you to quickly find the ideal visual for your creative needs.",
+    "Tog is a branding agency and web design agency delivering brand strategy, brand identity design, graphic design, video production, web development, UI UX design, SEO, and digital marketing services for ambitious growing businesses worldwide.",
 };
 
 export default function RootLayout({
