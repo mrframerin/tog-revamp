@@ -1,2 +1,7 @@
-/* Intentionally empty: the Flim clone is styled by the exact Webflow CSS
-   referenced from data/home.json. */
+/* The inherited search markup remains mounted because the original Flim
+   animation script expects both elements to exist. Hide the UI without
+   removing those script dependencies. */
+.searchbar-wrapper-static,
+.searchbar-wrapper-fixed {
+  display: none !important;
+}
