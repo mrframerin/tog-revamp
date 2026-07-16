@@ -60,17 +60,20 @@ html body {
       )
     )
   ) !important;
-  --_typography---heading--jumbo--line-height: 100% !important;
-  --_typography---heading--h1--line-height: 100% !important;
-  --_typography---heading--h2--line-height: 100% !important;
+  --_typography---heading--jumbo--line-height: 110% !important;
+  --_typography---heading--h1--line-height: 110% !important;
+  --_typography---heading--h2--line-height: 110% !important;
   --_typography---body--l--line-height: 120% !important;
   --_typography---body--m--line-height: 115% !important;
   --_typography---body--s--line-height: 125% !important;
   --_typography---ui--sans--s--line-height: 115% !important;
   --_typography---ui--sans--xs--line-height: 115% !important;
-  --_typography---heading--jumbo--font-weight: 400 !important;
-  --_typography---heading--h1--font-weight: 400 !important;
-  --_typography---heading--h2--font-weight: 400 !important;
+  --_typography---heading--jumbo--font-weight: 600 !important;
+  --_typography---heading--h1--font-weight: 600 !important;
+  --_typography---heading--h2--font-weight: 600 !important;
+  --_typography---heading--jumbo--letter-spacing: -0.005em !important;
+  --_typography---heading--h1--letter-spacing: -0.005em !important;
+  --_typography---heading--h2--letter-spacing: -0.005em !important;
   --_typography---body--l--font-weight: 400 !important;
   --_typography---body--m--font-weight: 400 !important;
   --_typography---body--s--font-weight: 400 !important;
