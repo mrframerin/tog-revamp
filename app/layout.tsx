@@ -1,8 +1,16 @@
 import type { Metadata } from "next";
 import { createElement as h } from "react";
+import { Hedvig_Letters_Serif } from "next/font/google";
 import home from "@/data/home.json";
 import "./globals.css";
 import { HeadAssets } from "@/components/flim/generated";
+
+const hedvigLettersSerif = Hedvig_Letters_Serif({
+  variable: "--font-hedvig-letters-serif",
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Tog | Creative Branding and Web Design Agency",
@@ -19,6 +27,7 @@ export default function RootLayout({
     "html",
     {
       lang: home.htmlAttrs.lang,
+      className: hedvigLettersSerif.variable,
       "data-wf-domain": home.htmlAttrs["data-wf-domain"],
       "data-wf-page": home.htmlAttrs["data-wf-page"],
       "data-wf-site": home.htmlAttrs["data-wf-site"],
