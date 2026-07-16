@@ -5,3 +5,100 @@
 .searchbar-wrapper-fixed {
   display: none !important;
 }
+
+/* Trial font override. Keep the mono UI face from the original design, but
+   replace every Swizzy-backed typography token with self-hosted Hedvig. */
+html body {
+  --_typography---heading--jumbo--font-family: var(
+      --font-hedvig-letters-serif
+    ),
+    Georgia, serif !important;
+  --_typography---heading--h1--font-family: var(--font-hedvig-letters-serif),
+    Georgia, serif !important;
+  --_typography---heading--h2--font-family: var(--font-hedvig-letters-serif),
+    Georgia, serif !important;
+  --_typography---body--l--font-family: var(--font-hedvig-letters-serif),
+    Georgia, serif !important;
+  --_typography---body--m--font-family: var(--font-hedvig-letters-serif),
+    Georgia, serif !important;
+  --_typography---body--s--font-family: var(--font-hedvig-letters-serif),
+    Georgia, serif !important;
+  --_typography---ui--sans--s--font-family: var(--font-hedvig-letters-serif),
+    Georgia, serif !important;
+  --_typography---ui--sans--xs--font-family: var(--font-hedvig-letters-serif),
+    Georgia, serif !important;
+  --_typography---heading--jumbo--font-size: min(
+    350px,
+    max(
+      151px,
+      calc(
+        151px + 199 * (
+            (min(100vw, 100vh * (16 / 9)) - 320px) / 1600
+          )
+      )
+    )
+  ) !important;
+  --_typography---heading--h1--font-size: min(
+    147px,
+    max(
+      45px,
+      calc(
+        45px + 102 * (
+            (min(100vw, 100vh * (16 / 9)) - 390px) / 1530
+          )
+      )
+    )
+  ) !important;
+  --_typography---heading--h2--font-size: min(
+    110px,
+    max(
+      33px,
+      calc(
+        33px + 77 * (
+            (min(100vw, 100vh * (16 / 9)) - 390px) / 1530
+          )
+      )
+    )
+  ) !important;
+  --_typography---heading--jumbo--line-height: 110% !important;
+  --_typography---heading--h1--line-height: 110% !important;
+  --_typography---heading--h2--line-height: 110% !important;
+  --_typography---body--l--line-height: 120% !important;
+  --_typography---body--m--line-height: 115% !important;
+  --_typography---body--s--line-height: 125% !important;
+  --_typography---ui--sans--s--line-height: 115% !important;
+  --_typography---ui--sans--xs--line-height: 115% !important;
+  --_typography---heading--jumbo--font-weight: 600 !important;
+  --_typography---heading--h1--font-weight: 600 !important;
+  --_typography---heading--h2--font-weight: 600 !important;
+  --_typography---heading--jumbo--letter-spacing: -0.005em !important;
+  --_typography---heading--h1--letter-spacing: -0.005em !important;
+  --_typography---heading--h2--letter-spacing: -0.005em !important;
+  --_typography---body--l--font-weight: 400 !important;
+  --_typography---body--m--font-weight: 400 !important;
+  --_typography---body--s--font-weight: 400 !important;
+  --_typography---ui--sans--s--font-weight: 400 !important;
+  --_typography---ui--sans--xs--font-weight: 400 !important;
+}
+
+/* Reduce the remaining custom heading shells by the same amount. Their
+   visible display text is normally supplied by a nested heading token, but
+   keeping these in step avoids any full-size fallback during animations. */
+html body .hero-logo-text {
+  font-size: 35px !important;
+  line-height: 40px !important;
+}
+
+html body .intro-plaform-title,
+html body h2:not([class]) {
+  font-size: 29px !important;
+  line-height: 33px !important;
+}
+
+/* SplitText adds overflow: clip inline to animate each word. Hedvig has
+   deeper descenders than Swizzy, so give the clip edge room for g, j, p, q,
+   and y while retaining the masked reveal. */
+html body :is(.text-heading-jumbo, .text-heading-h1, .text-heading-h2)
+  .split-word-mask {
+  overflow-clip-margin: 0.14em;
+}
